@@ -13,3 +13,6 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka/
+
+default:
+  message: user-service 에서 global profiles 에서 사용할 설정 정보들
