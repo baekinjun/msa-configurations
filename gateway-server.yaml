@@ -6,7 +6,7 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://14.53.156.174:8761/eureka
+      defaultZone: http://eureka:8761/eureka
 
 spring:
   security:
