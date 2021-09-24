@@ -36,7 +36,7 @@ spring:
     driver-class-name: org.mariadb.jdbc.Driver
     url: jdbc:mariadb://14.53.156.174:3306/usertest
     username: root
-    password: "{cipher}8f84ffc35599eee0bfe2b23e6277246d7f73142b9f689cd6d03dcec6cfaa562e"
+    password: root
 
   jpa:
     hibernate:
