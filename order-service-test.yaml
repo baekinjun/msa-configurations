@@ -6,7 +6,7 @@ spring:
 
 eureka:
   instance:
-    instance-id: order-ms-instanceteteteterefresg
+    instance-id: "{cipher}6baaa7bb534782e885b70cfda8b6dd0fbc99e84cb87cb574c4bfa88fa4d259b5bb4deed9a30dbefc9106585819ec1d7784bafc607f9e74fa34cd4cec4a1f64a2"
 
   client:
     register-with-eureka: true
