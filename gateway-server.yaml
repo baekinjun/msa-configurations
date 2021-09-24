@@ -16,7 +16,7 @@ spring:
   security:
     jwt:
       token:
-        security-key: secret-key
+        security-key: "{cipher}562a41d92ea66abdf36c764c965d5a74112bf41644e2d4c2f678c38953ea0de1"
   application:
     name: gateway-service
   cloud:
