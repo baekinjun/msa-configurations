@@ -1,6 +1,6 @@
 spring:
   redis:
-    host: redis
+    host: redis:6379
   security:
     oauth2:
       client:
