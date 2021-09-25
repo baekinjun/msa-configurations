@@ -3,7 +3,7 @@ spring:
     name: board-server
   data:
     mongodb:
-      uri: mongodb://mongo:27017/bts-board-db
+      uri: mongodb://localhost:27017/bts-board-db
 server:
   port: 8083
 
