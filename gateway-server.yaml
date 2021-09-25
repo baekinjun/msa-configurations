@@ -70,3 +70,10 @@ spring:
           filters:
             - GlobalAuthFilter
             - RewritePath=/board/?(?<segment>.*), /$\{segment}
+        - id: main-ms-instance
+          uri: lb://MAIN-SERVER
+          predicates:
+            - Path=/main/**
+          filters:
+            - GlobalAuthFilter
+            - RewritePath=/main/?(?<segment>.*), /$\{segment}
