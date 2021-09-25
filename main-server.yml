@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: main-server
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://172.30.32.1:3306/mariadb
+    username: root
+    password: "{cipher}06cb935878ea9c3e36f648c5c77158c3a345ac12d3e91772ede7a7c53c356fe9"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MariaDBDialect
+  redis:
+    host: redis
+    port: 6379
+server:
+  port: 8088
+eureka:
+  instance:
+    instance-id: main-ms-instance
+
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka:8761/eureka/
