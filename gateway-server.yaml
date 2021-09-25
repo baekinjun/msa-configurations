@@ -62,3 +62,11 @@ spring:
           filters:
             - GlobalRefreshFilter
             - RewritePath=/auth/?(?<segment>.*), /$\{segment}
+
+        - id: board-ms-instance
+          uri: lb://BOARD-SERVER
+          predicates:
+            - Path=/board/**
+          filters:
+            - GlobalAuthFilter
+            - RewritePath=/board/?(?<segment>.*), /$\{segment}
