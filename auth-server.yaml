@@ -1,6 +1,6 @@
 spring:
   redis:
-    host: redis
+    host: 172.30.32.1
     port: 6379
   security:
     oauth2:
