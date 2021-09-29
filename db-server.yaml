@@ -6,7 +6,7 @@ spring:
     driver-class-name: org.mariadb.jdbc.Driver
     url: jdbc:mariadb://bts-db.crtppt0lvgk7.ap-northeast-2.rds.amazonaws.com:3306/BTS
     username: bts
-    password: btsbts12
+    password: "{cipher}7efe023e74d6b9e49820e41b868943ed4b66bd77e5632f8c0d9cd50b769ba070"
 
   jpa:
     hibernate:
