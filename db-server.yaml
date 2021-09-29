@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://bts-db.crtppt0lvgk7.ap-northeast-2.rds.amazonaws.com:3306/BTS
+    username: bts
+    password: "{cipher}cf742928edeb9218374f283bb6cd7837bbf58e892f60a240fcf7c3bb1e3b3ac2"
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MariaDBDialect
+
+  application:
+    name: db-service
+
+eureka:
+  instance:
+    instance-id: db-ms-instance
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://3.38.31.74:8761/eureka
