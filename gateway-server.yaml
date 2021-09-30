@@ -68,7 +68,7 @@ spring:
           predicates:
             - Path=/board/**
           filters:
-            - GlobalAuthFilter
+#             - GlobalAuthFilter
             - RewritePath=/board/?(?<segment>.*), /$\{segment}
         - id: main-ms-instance
           uri: lb://MAIN-SERVER
