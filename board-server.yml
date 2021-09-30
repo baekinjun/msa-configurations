@@ -10,6 +10,7 @@ server:
 eureka:
   instance:
     instance-id: board-ms-instance
+    hostname: localhost
 
   client:
     register-with-eureka: true
