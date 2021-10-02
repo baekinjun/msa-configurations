@@ -1,5 +1,4 @@
 spring:
-  test: test111
   application:
     name: board-server
   rabbitmq: # RabbitMQ 관련 설정
