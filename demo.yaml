@@ -1,6 +1,6 @@
 server:
   port: 8081
-  test: test11
+  test: test
 
 spring:
   rabbitmq: # RabbitMQ 관련 설정
