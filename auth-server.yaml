@@ -48,6 +48,7 @@ server:
 eureka:
   instance:
     instance-id: auth-ms-instance
+    hostname: 3.35.78.48
     
   client:
     fetch-registry: true
