@@ -6,8 +6,8 @@ spring:
   rabbitmq: # RabbitMQ 관련 설정
     host: localhost
     port: 5672
-    username: madplay
-    password: madplay
+    username: bts
+    password: btsbts12
 
 management:
   endpoints:
