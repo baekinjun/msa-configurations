@@ -9,8 +9,4 @@ spring:
     username: bts
     password: btsbts12
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: bus-refresh
+
