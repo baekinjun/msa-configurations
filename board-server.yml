@@ -3,7 +3,7 @@ spring:
     name: board-server
   rabbitmq: # RabbitMQ 관련 설정
     host: 3.38.31.74
-    port: 15672
+    port: 5672
     username: bts
     password: "{cipher}e23db7ec02ab706c93bee68f4f2637c81fc7681d55d6481d128e9cb3535409d2"
   data:
