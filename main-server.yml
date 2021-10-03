@@ -3,7 +3,7 @@ spring:
     name: main-server
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://bts-db.crtppt0lvgk7.ap-northeast-2.rds.amazonaws.com:3306/BTS
+    url: jdbc:mariadb://bts-database.crtppt0lvgk7.ap-northeast-2.rds.amazonaws.com:3306/BTS
     username: bts
     password: btsbts12
   jpa:
