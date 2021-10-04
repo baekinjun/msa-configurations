@@ -57,7 +57,7 @@ spring:
         - id: auth-ms-instance
           uri: lb://AUTH-SERVICE
           predicates:
-            - Path=/auth/test
+            - Path=/auth/login
           filters:
             - RewritePath=/auth/?(?<segment>.*), /$\{segment}
         - id: auth-ms-instance
