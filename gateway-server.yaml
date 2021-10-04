@@ -80,5 +80,5 @@ spring:
           predicates:
             - Path=/main/**
           filters:
-            - GlobalAuthFilter
+#             - GlobalAuthFilter
             - RewritePath=/main/?(?<segment>.*), /$\{segment}
