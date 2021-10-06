@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: auction-producer
+  rabbitmq: # RabbitMQ 관련 설정
+    host: 3.38.31.74
+    port: 5672
+    username: bts
+    password: "{cipher}e23db7ec02ab706c93bee68f4f2637c81fc7681d55d6481d128e9cb3535409d2"
+  kafka:
+    producer:
+      bootstrap-servers: 15.165.40.240:9092
+server:
+  port: 9091
+
+eureka:
+  instance:
+    instance-id: producer-ms-instance
+    hostname: 15.165.33.197
+
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://3.38.31.74:8761/eureka
