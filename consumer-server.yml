@@ -7,5 +7,15 @@ spring:
   kafka:
     consumer:
       bootstrap-servers: kafka:9092
+eureka:
+  instance:
+    instance-id: consumer-ms-instance
+    hostname: 3.35.78.48
+    
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://3.38.31.74:8761/eureka
 server:
   port: 9090
