@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: auction-consumer
+  data:
+    mongodb:
+      uri: mongodb://mongo:27017/bts-auction-db
+  kafka:
+    consumer:
+      bootstrap-servers: kafka:9092
+server:
+  port: 9090
