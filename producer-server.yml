@@ -10,7 +10,7 @@ spring:
     producer:
       bootstrap-servers: 15.165.40.240:9092
 server:
-  port: 9091
+  port: 8080
 
 eureka:
   instance:
