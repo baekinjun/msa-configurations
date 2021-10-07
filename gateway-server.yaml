@@ -95,3 +95,18 @@ spring:
           filters:
 #             - GlobalAuthFilter
             - RewritePath=/main/?(?<segment>.*), /$\{segment}
+        - id: consumer-ms-instance
+          uri: lb://AUCTION-CONSUMER
+          predicates:
+            - Path=/consumer/**
+          filters:
+#             - GlobalAuthFilter
+            - RewritePath=/consumer/?(?<segment>.*), /$\{segment}
+        - id: producer-ms-instance
+          uri: lb://AUCTION-PRODUCER
+          predicates:
+            - Path=/producer/**
+          filters:
+#             - GlobalAuthFilter
+            - RewritePath=/producer/?(?<segment>.*), /$\{segment}
+
