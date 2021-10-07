@@ -16,7 +16,7 @@ spring:
 eureka:
   instance:
     instance-id: consumer-ms-instance
-    hostname: 3.35.78.48
+    hostname: 3.34.239.132
     
   client:
     fetch-registry: true
