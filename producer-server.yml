@@ -8,7 +8,7 @@ spring:
     password: "{cipher}e23db7ec02ab706c93bee68f4f2637c81fc7681d55d6481d128e9cb3535409d2"
   kafka:
     producer:
-      bootstrap-servers: 3.34.239.132:9092
+      bootstrap-servers: 172.17.0.1:9092
 server:
   port: 8080
 
