@@ -26,19 +26,6 @@ spring:
     name: gateway-service
   cloud:
     gateway:
-      default-filters:
-      - CircuitBreaker=myCircuitBreaker
-      - name: Retry
-        args:
-          retries: 3
-          series: # empty
-          methods:
-          - GET
-          - POST
-          - PUT
-          - DELETE
-          exceptions:
-          - java.net.ConnectException
       globalcors:
         cors-configurations:
           '[/**]':
