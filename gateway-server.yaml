@@ -46,13 +46,12 @@ spring:
               - OPTIONS
               - DELETE
       routes:
-        - id: order-ms-instance
-          uri: lb://ORDER-SERVICE
+        - id: auth-ms-instance
+          uri: lb://AUTH-SERVICE
           predicates:
-            - Path=/order/**
+            - Path=/auth/logout
           filters:
-            - GlobalAuthFilter
-            - RewritePath=/order/?(?<segment>.*), /$\{segment}
+            - RewritePath=/auth/?(?<segment>.*), /$\{segment}
 
         - id: auth-ms-instance
           uri: lb://AUTH-SERVICE
@@ -60,6 +59,7 @@ spring:
             - Path=/auth/login
           filters:
             - RewritePath=/auth/?(?<segment>.*), /$\{segment}
+            
         - id: auth-ms-instance
           uri: lb://AUTH-SERVICE
           predicates:
@@ -73,27 +73,44 @@ spring:
           predicates:
             - Path=/board/**
           filters:
-#             - GlobalAuthFilter
+            - GlobalAuthFilter
             - RewritePath=/board/?(?<segment>.*), /$\{segment}
+            
+        - id: main-ms-instance
+          uri: lb://MAIN-SERVER
+          predicates:
+            - Path=/main/klayapi
+          filters:
+            - RewritePath=/main/?(?<segment>.*), /$\{segment}
+            
+        - id: main-ms-instance
+          uri: lb://MAIN-SERVER
+          predicates:
+            - Path=/main/NFT/allNFT
+          filters:
+            - RewritePath=/main/?(?<segment>.*), /$\{segment}
+            
         - id: main-ms-instance
           uri: lb://MAIN-SERVER
           predicates:
             - Path=/main/**
           filters:
-#             - GlobalAuthFilter
+            - GlobalAuthFilter
             - RewritePath=/main/?(?<segment>.*), /$\{segment}
+            
         - id: consumer-ms-instance
           uri: lb://AUCTION-CONSUMER
           predicates:
             - Path=/consumer/**
           filters:
-#             - GlobalAuthFilter
+            - GlobalAuthFilter
             - RewritePath=/consumer/?(?<segment>.*), /$\{segment}
+            
         - id: producer-ms-instance
           uri: lb://AUCTION-PRODUCER
           predicates:
             - Path=/producer/**
           filters:
-#             - GlobalAuthFilter
+            - GlobalAuthFilter
             - RewritePath=/producer/?(?<segment>.*), /$\{segment}
 
