@@ -41,6 +41,12 @@ spring:
 
   application:
     name: auth-service
+  sleuth:
+    enabled: true
+    sampler:
+      probability: 0.5
+  zipkin:
+    base-url: http://3.38.28.154:9411/
 
 server:
   port: 8081
