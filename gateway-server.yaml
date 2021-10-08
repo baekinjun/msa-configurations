@@ -24,6 +24,12 @@ spring:
         security-key: "{cipher}e28fb01d77f05afb7981fff27f7eff676a19c80ee896eb0c7ba0cda46d1e0512"
   application:
     name: gateway-service
+  sleuth:
+    enabled: true
+    sampler:
+      probability: 0.5
+  zipkin:
+    base-url: http://3.38.28.154:9411/
   cloud:
     gateway:
       globalcors:
