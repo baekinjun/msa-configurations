@@ -11,7 +11,7 @@ spring:
       uri: mongodb://mongo:27017/Auction
   kafka:
     consumer:
-      bootstrap-servers: localhost:9092
+      bootstrap-servers: 172.17.0.1:9092
       group-id: auction-group_id
 eureka:
   instance:
