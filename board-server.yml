@@ -15,8 +15,7 @@ server:
 eureka:
   instance:
     instance-id: board-ms-instance
-    hostname: 15.165.40.240
-
+    hostname: 3.35.194.19
   client:
     register-with-eureka: true
     fetch-registry: true
