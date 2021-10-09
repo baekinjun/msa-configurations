@@ -33,7 +33,7 @@ server:
 eureka:
   instance:
     instance-id: producer-ms-instance
-    hostname: 3.36.66.33
+    hostname: 13.209.4.153
 
   client:
     fetch-registry: true
