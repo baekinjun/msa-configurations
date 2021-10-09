@@ -1,6 +1,12 @@
 spring:
   application:
     name: auction-consumer
+  sleuth:
+    enabled: true
+    sampler:
+      probability: 0.5
+  zipkin:
+    base-url: http://3.38.28.154:9411/
   rabbitmq: # RabbitMQ 관련 설정
     host: 3.38.31.74
     port: 5672
