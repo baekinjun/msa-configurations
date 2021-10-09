@@ -79,7 +79,7 @@ spring:
           predicates:
             - Path=/board/**
           filters:
-            - GlobalAuthFilter
+#             - GlobalAuthFilter
             - RewritePath=/board/?(?<segment>.*), /$\{segment}
             
         - id: main-ms-instance
@@ -101,7 +101,7 @@ spring:
           predicates:
             - Path=/main/**
           filters:
-#             - GlobalAuthFilter
+            - GlobalAuthFilter
             - RewritePath=/main/?(?<segment>.*), /$\{segment}
             
         - id: consumer-ms-instance
