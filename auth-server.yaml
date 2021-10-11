@@ -14,7 +14,7 @@ spring:
           kakao:
             client-id: "{cipher}66ee26adde6a9b4bc2ced5eaf0e4ea9d5a1c75b90129ada380c9171105320439469f4dac8d857dce40cd759c6a4daa2a318e07fa73df2df6bcac0156fb6a5d68"
             client-secret: "{cipher}2523cff77e81b4be9e0a3b01c81efb95d8f58c638491a8f82decdda979d43abb989698b49052d553976a3a95aa204358b8b558233d16a99d37242aa49176d534"
-            redirect-uri: "http://localhost:3000/login/oauth2/code/kakao"
+            redirect-uri: "http://bithumb-bts.com/login/oauth2/code/kakao"
             client-authentication-method: POST
             authorization-grant-type: "authorization_code"
             scope: profile_nickname, profile_image, account_email
@@ -22,7 +22,7 @@ spring:
           naver:
             client-id: "{cipher}e3e27d90b588e56530685c279f6b1135d7c29d63348bb641cf74c6c6ed04a37987c736de8a064ae64b77c13e527b0d19"
             client-secret: "{cipher}e8a7be79ea491e42464906e54a0f5f525c3de85ffe966465476eb884e4c3e1c5"
-            redirect-uri: "http://localhost:3000/login/oauth2/code/naver"
+            redirect-uri: "http://bithumb-bts.com/login/oauth2/code/naver"
             uthorization-grant-type: authorization_code
             scope: name, email, profile_image
             client-name: Naver
