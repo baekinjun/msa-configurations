@@ -99,9 +99,16 @@ spring:
         - id: main-ms-instance
           uri: lb://MAIN-SERVER
           predicates:
-            - Path=/main/NFT/findNFT/**
+            - Path=/main/NFT/userlikelist/**
           filters:
             - RewritePath=/main/?(?<segment>.*), /$\{segment}  
+            
+        - id: main-ms-instance
+          uri: lb://MAIN-SERVER
+          predicates:
+            - Path=/main/NFT/findNFT/**
+          filters:
+            - RewritePath=/main/?(?<segment>.*), /$\{segment}
             
         - id: main-ms-instance
           uri: lb://MAIN-SERVER
